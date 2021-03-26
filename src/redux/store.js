@@ -9,5 +9,4 @@ const rootReducer = combineReducers({
     cart
 });
 
-
 export default createStore(rootReducer, composeWithDevTools(applyMiddleware(promiseMiddleware)));
