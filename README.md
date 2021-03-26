@@ -43,8 +43,9 @@ products
    CREATE TABLE products (
     product_id  SERIAL PRIMARY KEY NOT NULL,
     category    VARCHAR(100),
-    price       decimal,
-    description VARCHAR(1000)
+    price       DECIMAL,
+    description VARCHAR(1000),
+    name        VARCHAR(100),
    ); 
 ```
 
@@ -77,17 +78,25 @@ users
 - get specific products => POST '/api/products' 
 - get specific product => GET '/api/products/:id'
 
-#### Users
+#### Auth
 - register a user => POST '/api/register'
 - login a user => POST '/api/login'
 - logout a user => DELETE '/api/logout'
 - delete a user => DELETE '/api/delete'
 
 ### Controllers
-- usersController
+- authController
 - productsController
 
 ## Front-end
 
 Wireframes and Component Tree:
 https://miro.com/app/board/o9J_lY3gBWc=/
+
+### Routes
+- path="/" => Landing
+- path="/shop" => Shop
+   - path="/shop/:category" => Category Shop
+- path="/cart" => Cart
+- path="/product/:product_id" => Product Display Page
+- path="/settings" => Settings
