@@ -4,6 +4,9 @@
 //     return true;
 // }
 
+test('should pass', () => {
+    expect(1).toBe(1);
+})
 // describe('Auth API Endpoints', () => {
 
 //     beforeAll( async () => {   
