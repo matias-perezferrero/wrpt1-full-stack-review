@@ -4,7 +4,7 @@ const massive = require('massive');
 const session = require('express-session');
 const cors = require('cors');
 const authCtrl = require('./controllers/authController');
-// const productsCtrl = require('./controllers/productsController');
+const productsCtrl = require('./controllers/productsController');
 const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 
 const app = express();
@@ -44,10 +44,10 @@ massive({
 app.post('/api/register', authCtrl.register);
 app.post('/api/login', authCtrl.login);
 app.delete('/api/logout', authCtrl.logout);
-app.post('/api/delete/', authCtrl.delete);
+app.post('/api/delete', authCtrl.delete);
 
 // Product Endpoints
-// app.get('/api/products', productsCtrl.getAllProducts);
+app.get('/api/products', productsCtrl.getAllProducts);
 // app.post('/api/products', productsCtrl.getSpecificProducts);
 // app.get('/api/products/:id', productsCtrl.getProduct);
 

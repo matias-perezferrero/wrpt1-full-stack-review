@@ -48,11 +48,3 @@ VALUES (7, 'https://images.thdstatic.com/productImages/2da3aa20-c521-4191-8855-3
 
 INSERT INTO product_images (product_id, url)
 VALUES (7, 'https://images.thdstatic.com/productImages/a41d67d1-bd50-47a2-8c93-6ba2edc5c477/svn/honda-self-propelled-lawn-mowers-hrn216vka-c3_100.jpg');
-
-
-
-
-
-
-
-
