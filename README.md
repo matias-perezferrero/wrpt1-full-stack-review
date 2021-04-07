@@ -75,8 +75,10 @@ users
 
 #### Products
 - get all products => GET '/api/products'
+   - query ?category=category
 - get specific products => POST '/api/products' 
 - get specific product => GET '/api/products/:id'
+- get product categories => GET '/api/products/categories'
 
 #### Auth
 - register a user => POST '/api/register'
